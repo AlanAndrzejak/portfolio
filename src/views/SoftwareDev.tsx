@@ -23,7 +23,7 @@ export default function SoftwareDev({ onContact }: SoftwareDevProps) {
             </div>
             <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-6">
               I deliver software,<br />
-              <span className="bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">powered by AI</span>
+              <span className="bg-linear-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">powered by AI</span>
             </h1>
             <p className="text-slate-400 text-lg leading-relaxed mb-8">
               I build and ship complete software products — from concept to deployment.
@@ -44,14 +44,14 @@ export default function SoftwareDev({ onContact }: SoftwareDevProps) {
           </div>
           <div className="order-1 lg:order-2">
             <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-tr from-blue-600/20 to-cyan-500/10 rounded-2xl blur-2xl" />
+              <div className="absolute -inset-4 bg-linear-to-tr from-blue-600/20 to-cyan-500/10 rounded-2xl blur-2xl" />
               <img
                 src="https://images.pexels.com/photos/34803969/pexels-photo-34803969.jpeg?auto=compress&cs=tinysrgb&w=1200"
                 alt="Laptop displaying code in a dimly lit room"
                 className="relative rounded-2xl shadow-2xl shadow-blue-950/50 w-full h-[420px] sm:h-[500px] object-cover border border-slate-800"
                 loading="lazy"
               />
-              <div className="absolute bottom-4 left-4 right-4 bg-slate-900/80 backdrop-blur-sm rounded-xl border border-slate-700/50 p-4 font-mono text-sm">
+              <div className="absolute bottom-4 left-4 right-4 bg-slate-900/80 backdrop-blur-xs rounded-xl border border-slate-700/50 p-4 font-mono text-sm">
                 <div className="flex gap-1.5 mb-2">
                   <span className="w-3 h-3 rounded-full bg-red-500/80" />
                   <span className="w-3 h-3 rounded-full bg-yellow-500/80" />

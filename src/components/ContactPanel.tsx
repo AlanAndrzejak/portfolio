@@ -1,4 +1,5 @@
-import { X, Mail, Phone, Instagram, Github, Linkedin } from 'lucide-react';
+import { X, Mail, Phone } from 'lucide-react';
+import { Instagram, Github, Linkedin } from '@/components/BrandIcons';
 
 type Section = 'software' | 'photography' | 'pastry';
 
@@ -51,7 +52,7 @@ export default function ContactPanel({ open, onClose, section }: ContactPanelPro
     <>
       {open && (
         <div
-          className="fixed inset-0 z-[60] bg-black/40 backdrop-blur-sm transition-opacity"
+          className="fixed inset-0 z-[60] bg-black/40 backdrop-blur-xs transition-opacity"
           onClick={onClose}
         />
       )}
@@ -103,7 +104,7 @@ export default function ContactPanel({ open, onClose, section }: ContactPanelPro
                 type="text"
                 required
                 placeholder="Your name"
-                className={`w-full px-4 py-2.5 rounded-lg border ${t.input} outline-none transition-colors`}
+                className={`w-full px-4 py-2.5 rounded-lg border ${t.input} outline-hidden transition-colors`}
               />
             </div>
             <div>
@@ -112,7 +113,7 @@ export default function ContactPanel({ open, onClose, section }: ContactPanelPro
                 type="email"
                 required
                 placeholder="you@example.com"
-                className={`w-full px-4 py-2.5 rounded-lg border ${t.input} outline-none transition-colors`}
+                className={`w-full px-4 py-2.5 rounded-lg border ${t.input} outline-hidden transition-colors`}
               />
             </div>
             <div>
@@ -121,7 +122,7 @@ export default function ContactPanel({ open, onClose, section }: ContactPanelPro
                 required
                 rows={4}
                 placeholder="Tell me what you're looking for..."
-                className={`w-full px-4 py-2.5 rounded-lg border ${t.input} outline-none transition-colors resize-none`}
+                className={`w-full px-4 py-2.5 rounded-lg border ${t.input} outline-hidden transition-colors resize-none`}
               />
             </div>
             <button

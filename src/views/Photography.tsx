@@ -39,7 +39,7 @@ export default function Photography({ onContact }: PhotographyProps) {
 
         <div className="grid sm:grid-cols-3 gap-4 sm:gap-6 mb-16">
           {galleryPhotos.map((photo, i) => (
-            <div key={i} className="group relative overflow-hidden rounded-sm aspect-[3/4]">
+            <div key={i} className="group relative overflow-hidden rounded-xs aspect-[3/4]">
               <img
                 src={photo.src}
                 alt={photo.alt}
